@@ -18,6 +18,7 @@
 				</Compiler>
 				<Linker>
 					<Add option="-lws2_32" />
+					<Add library="..\..\Libraries\boost_1_53_0\bin\libs\thread\build\gcc-mingw-4.7.1\debug\link-static\threading-multi\libboost_thread-mgw47-mt-d-1_53.a" />
 					<Add library="..\..\Libraries\boost_1_53_0\bin\libs\system\build\gcc-mingw-4.7.1\debug\link-static\threading-multi\libboost_system-mgw47-mt-d-1_53.a" />
 					<Add directory="../../Libraries/boost_1_53_0/bin/libs" />
 				</Linker>
