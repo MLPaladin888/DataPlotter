@@ -1,15 +1,13 @@
 # depslib dependency file v1.0
-1372723334 source:d:\programming\localgit\dataplotter\source\main.cpp
+1372978304 source:d:\programming\localgit\dataplotter\source\main.cpp
 	<stdio.h>
 	"SerialModule/SerialMain.h"
 
-1372723364 d:\programming\localgit\dataplotter\include\serialmodule\serialmain.h
-	"boost\asio.hpp"
-	"boost\asio\serial_port.hpp"
-	"boost\bind.hpp"
-	"boost\thread.hpp"
+1372974985 d:\programming\localgit\dataplotter\include\serialmodule\serialmain.h
+	"SerialModule/SerialConnection.h"
+	"SerialModule/SerialDeviceEnumeration.h"
 
-1372723342 source:d:\programming\localgit\dataplotter\source\serialmodule\serialmain.cpp
+1372971807 source:d:\programming\localgit\dataplotter\source\serialmodule\serialmain.cpp
 	"SerialModule/SerialMain.h"
 
 1326624384 d:\programming\libraries\boost_1_53_0\\boost\asio\serial_port.hpp
@@ -9016,4 +9014,31 @@
 	<boost/type_traits/is_class.hpp>
 	<boost/container/detail/preprocessor.hpp>
 	<boost/container/detail/config_end.hpp>
+
+1372978829 source:d:\programming\localgit\dataplotter\source\connection\connection.cpp
+	"Connection/Connection.h"
+
+1372979487 d:\programming\localgit\dataplotter\include\connection\connection.h
+	"boost/asio.hpp"
+	"Connection/DeviceEnumeration.h"
+
+1372979830 d:\programming\localgit\dataplotter\include\serialmodule\serialconnection.h
+	"Connection\Connection.h"
+	"SerialModule\SerialDeviceEnumeration.h"
+	"boost\asio\serial_port.hpp"
+
+1372979465 d:\programming\localgit\dataplotter\include\serialmodule\serialdeviceenumeration.h
+	"boost\asio\serial_port.hpp"
+	"Connection\DeviceEnumeration.h"
+
+1372979045 source:d:\programming\localgit\dataplotter\source\serialmodule\serialconnection.cpp
+	"SerialModule/SerialConnection.h"
+
+1372977564 source:d:\programming\localgit\dataplotter\source\serialmodule\serialdeviceenumeration.cpp
+	"SerialModule/SerialDeviceEnumeration.h"
+
+1372979365 d:\programming\localgit\dataplotter\include\connection\deviceenumeration.h
+
+1372979498 source:d:\programming\localgit\dataplotter\source\connection\deviceenumeration.cpp
+	"Connection/DeviceEnumeration.h"
 

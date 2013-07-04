@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include "SerialModule/SerialMain.h"
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// To Do:
+// Resolve DeviceEnumeration inheretence confusion.  Should Connection.Connect() really be virtual?
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 int main(int argc, char **argv)
 {
-    SerialPort myPort("COM3");
-    myPort.Open();
-    myPort.SetOptions(115200, 8, boost::asio::serial_port_base::flow_control::none, boost::asio::serial_port_base::parity::none, boost::asio::serial_port_base::stop_bits::one);
+    boost::shared_ptr<boost::asio::io_service> io_service(new boost::asio::io_service);     // shared pointer because Connection (and later) objects access to it
+    SerialConnection serialConnection1(io_service);
 
-    myPort.Close();
+
+
+
 }

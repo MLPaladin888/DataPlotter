@@ -18,8 +18,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-lws2_32" />
-					<Add library="..\..\Libraries\boost_1_53_0\bin\libs\thread\build\gcc-mingw-4.7.1\debug\link-static\threading-multi\libboost_thread-mgw47-mt-d-1_53.a" />
-					<Add library="..\..\Libraries\boost_1_53_0\bin\libs\system\build\gcc-mingw-4.7.1\debug\link-static\threading-multi\libboost_system-mgw47-mt-d-1_53.a" />
+					<Add library="D:\Programming\Libraries\boost_1_53_0\bin\libs\system\build\gcc-mingw-4.7.1\debug\threading-multi\libboost_system-mgw47-mt-d-1_53.dll.a" />
+					<Add library="D:\Programming\Libraries\boost_1_53_0\bin\libs\thread\build\gcc-mingw-4.7.1\debug\threading-multi\libboost_thread-mgw47-mt-d-1_53.dll.a" />
 					<Add directory="../../Libraries/boost_1_53_0/bin/libs" />
 				</Linker>
 			</Target>
@@ -39,8 +39,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Include/Connection/Connection.h" />
+		<Unit filename="Include/Connection/DeviceEnumeration.h" />
+		<Unit filename="Include/SerialModule/SerialConnection.h" />
+		<Unit filename="Include/SerialModule/SerialDeviceEnumeration.h" />
 		<Unit filename="Include/SerialModule/SerialMain.h" />
+		<Unit filename="Source/Connection/Connection.cpp" />
+		<Unit filename="Source/Connection/DeviceEnumeration.cpp" />
 		<Unit filename="Source/Main.cpp" />
+		<Unit filename="Source/SerialModule/SerialConnection.cpp" />
+		<Unit filename="Source/SerialModule/SerialDeviceEnumeration.cpp" />
 		<Unit filename="Source/SerialModule/SerialMain.cpp" />
 		<Extensions>
 			<code_completion />

@@ -1,6 +1,6 @@
 #include "SerialModule/SerialMain.h"
 
-SerialPort::SerialPort(const std::string& device)   : port(new boost::asio::serial_port(this->io_service)), deviceName(device)
+/*SerialPort::SerialPort(const std::string& device)   : port(new boost::asio::serial_port(this->io_service)), deviceName(device)
 {
 }
 
@@ -56,7 +56,7 @@ void SerialPort::RunThread()
 {
     boost::thread t(boost::bind(&boost::asio::io_service::run, &this->io_service));
 }
-
+*/
 
 
 
