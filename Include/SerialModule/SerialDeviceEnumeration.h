@@ -3,27 +3,27 @@
 
 #define _WIN32_WINNT 0x0501
 #include "boost\asio\serial_port.hpp"
-#include "Connection\DeviceEnumeration.h"
 
-class SerialDeviceEnumeration : public DeviceEnumeration
+class SerialDeviceEnumeration
 //////////////////////////////////////////////////////////////////////////
 ////// Carries device name and port options for serial ports /////////////
 //////////////////////////////////////////////////////////////////////////
 {
-typedef boost::asio::serial_port_base::flow_control::type flow_Type;
-typedef boost::asio::serial_port_base::parity::type parity_Type;
-typedef boost::asio::serial_port_base::stop_bits::type stopBits_Type;
+typedef boost::asio::serial_port_base::flow_control::type flow;
+typedef boost::asio::serial_port_base::parity::type parity;
+typedef boost::asio::serial_port_base::stop_bits::type stopBits;
 
 public:
-    SerialDeviceEnumeration(std::string &devicename, const unsigned int buadrate, const unsigned int datasize,
-                                const flow_Type flowtype, const parity_Type paritytype, const stopBits_Type stopbitstype);
+    SerialDeviceEnumeration(const std::string &devicename, const unsigned int baudrate);
+    SerialDeviceEnumeration(const std::string &devicename, const unsigned int buadrate, const unsigned int datasize,
+                                const flow flowtype, const parity paritytype, const stopBits stopbitstype);
 
     std::string name;
     unsigned int baud;
     unsigned int dataSize;
-    flow_Type flowType;
-    parity_Type parityType;
-    stopBits_Type stopBitsType;
+    flow flowType;
+    parity parityType;
+    stopBits stopBitsType;
 };
 
 

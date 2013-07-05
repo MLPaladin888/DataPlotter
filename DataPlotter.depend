@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1372978304 source:d:\programming\localgit\dataplotter\source\main.cpp
+1373038681 source:d:\programming\localgit\dataplotter\source\main.cpp
 	<stdio.h>
 	"SerialModule/SerialMain.h"
 
@@ -9018,26 +9018,24 @@
 1372978829 source:d:\programming\localgit\dataplotter\source\connection\connection.cpp
 	"Connection/Connection.h"
 
-1372979487 d:\programming\localgit\dataplotter\include\connection\connection.h
+1373034741 d:\programming\localgit\dataplotter\include\connection\connection.h
 	"boost/asio.hpp"
-	"Connection/DeviceEnumeration.h"
 
-1372979830 d:\programming\localgit\dataplotter\include\serialmodule\serialconnection.h
+1373038153 d:\programming\localgit\dataplotter\include\serialmodule\serialconnection.h
 	"Connection\Connection.h"
 	"SerialModule\SerialDeviceEnumeration.h"
 	"boost\asio\serial_port.hpp"
 
-1372979465 d:\programming\localgit\dataplotter\include\serialmodule\serialdeviceenumeration.h
+1373035505 d:\programming\localgit\dataplotter\include\serialmodule\serialdeviceenumeration.h
 	"boost\asio\serial_port.hpp"
-	"Connection\DeviceEnumeration.h"
 
-1372979045 source:d:\programming\localgit\dataplotter\source\serialmodule\serialconnection.cpp
+1373038670 source:d:\programming\localgit\dataplotter\source\serialmodule\serialconnection.cpp
 	"SerialModule/SerialConnection.h"
 
-1372977564 source:d:\programming\localgit\dataplotter\source\serialmodule\serialdeviceenumeration.cpp
+1373035450 source:d:\programming\localgit\dataplotter\source\serialmodule\serialdeviceenumeration.cpp
 	"SerialModule/SerialDeviceEnumeration.h"
 
-1372979365 d:\programming\localgit\dataplotter\include\connection\deviceenumeration.h
+1372980187 d:\programming\localgit\dataplotter\include\connection\deviceenumeration.h
 
 1372979498 source:d:\programming\localgit\dataplotter\source\connection\deviceenumeration.cpp
 	"Connection/DeviceEnumeration.h"

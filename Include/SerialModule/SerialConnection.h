@@ -14,14 +14,14 @@ class SerialConnection : public Connection
 ////////////////////////////////////////////////////////////////////////////////////////
 {
 public:
-    SerialConnection(boost::shared_ptr<boost::asio::io_service> shared_ptr_io_service);
+    SerialConnection(boost::shared_ptr<boost::asio::io_service> shared_ptr_io_service, const SerialDeviceEnumeration &SerialDevEnum);
     ~SerialConnection();
-    error_code Connect(const DeviceEnumeration &SerialDevEnum);
+    error_code Connect();
     error_code Disconnect();
 
-
-
-
+private:
+    boost::asio::serial_port port;
+    SerialDeviceEnumeration deviceEnum;
 };
 
 
