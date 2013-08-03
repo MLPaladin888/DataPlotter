@@ -4,12 +4,4 @@
 #include "SerialModule/SerialConnection.h"
 #include "SerialModule/SerialDeviceEnumeration.h"
 
-
-
-
-
-
-
-
-
 #endif // SERIALMAIN_H_INCLUDED

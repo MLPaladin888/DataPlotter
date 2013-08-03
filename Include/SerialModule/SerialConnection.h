@@ -19,7 +19,7 @@ public:
     error_code Connect();
     error_code Disconnect();
 
-private:
+public: // make private again later
     boost::asio::serial_port port;
     SerialDeviceEnumeration deviceEnum;
 };
