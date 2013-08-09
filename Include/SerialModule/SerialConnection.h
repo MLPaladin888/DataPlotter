@@ -20,7 +20,7 @@ public:
     error_code Disconnect();
 
 public: // make private again later
-    boost::asio::serial_port port;
+    boost::shared_ptr<boost::asio::serial_port> port;
     SerialDeviceEnumeration deviceEnum;
 };
 

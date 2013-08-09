@@ -15,12 +15,17 @@
 					<Add option="-g" />
 					<Add directory="Include" />
 					<Add directory="D:/Programming/Libraries/boost_1_54_0" />
+					<Add directory="D:/Programming/Libraries/SFML2.1/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-lws2_32" />
 					<Add library="D:\Programming\Libraries\boost_1_54_0\bin\libs\system\build\gcc-mingw-4.7.1\debug\threading-multi\libboost_system-mgw47-mt-d-1_54.dll.a" />
 					<Add library="D:\Programming\Libraries\boost_1_54_0\bin\libs\thread\build\gcc-mingw-4.7.1\debug\threading-multi\libboost_thread-mgw47-mt-d-1_54.dll.a" />
-					<Add directory="../../Libraries/boost_1_53_0/bin/libs" />
+					<Add library="D:\Programming\Libraries\SFML2.1\lib\libsfml-system-d.a" />
+					<Add library="D:\Programming\Libraries\SFML2.1\lib\libsfml-graphics-d.a" />
+					<Add library="D:\Programming\Libraries\SFML2.1\lib\libsfml-window-d.a" />
+					<Add directory="D:/Programming/Libraries/boost_1_54_0/bin/libs" />
+					<Add directory="D:/Programming/Libraries/SFML2.1/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -40,13 +45,19 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="Include/Connection/Connection.h" />
+		<Unit filename="Include/DataBucket/DataBucket.h" />
+		<Unit filename="Include/Readers/AsyncReader.h" />
 		<Unit filename="Include/SerialModule/SerialConnection.h" />
 		<Unit filename="Include/SerialModule/SerialDeviceEnumeration.h" />
 		<Unit filename="Include/SerialModule/SerialMain.h" />
+		<Unit filename="Include/Threads/Threads.h" />
 		<Unit filename="Source/Connection/Connection.cpp" />
+		<Unit filename="Source/DataBucket/DataBucket.cpp" />
 		<Unit filename="Source/Main.cpp" />
+		<Unit filename="Source/Readers/AsyncReader.cpp" />
 		<Unit filename="Source/SerialModule/SerialConnection.cpp" />
 		<Unit filename="Source/SerialModule/SerialDeviceEnumeration.cpp" />
+		<Unit filename="Source/Threads/Threads.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
