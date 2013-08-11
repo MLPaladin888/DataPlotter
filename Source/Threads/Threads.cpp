@@ -10,7 +10,10 @@ void InitThreadGroup(boost::shared_ptr<boost::thread_group> workers, boost::shar
 
 void ThreadStartupFunc(boost::shared_ptr<boost::asio::io_service> io_service)
 {
-    std::cout << "Thread " << boost::this_thread::get_id() << " started.\n";
+    #ifdef THREADS_DEBUG
+        std::cout << "Thread " << boost::this_thread::get_id() << " started.\n";
+    #endif // THREADS_DEBUG
+
     boost::system::error_code ec;
     while(1)
     {
@@ -28,4 +31,7 @@ void ThreadStartupFunc(boost::shared_ptr<boost::asio::io_service> io_service)
             std::cout << "[" << boost::this_thread::get_id() << "] Exception: " << ex.what() << "\n";
         }
     }
+    #ifdef THREADS_DEBUG
+        std::cout << "Thread " << boost::this_thread::get_id() << " ending.\n";
+    #endif // THREADS_DEBUG
 }

@@ -6,19 +6,25 @@
 #include "boost/thread/mutex.hpp"
 #include "boost/foreach.hpp"
 
+typedef unsigned char elementType;
+typedef boost::circular_buffer<elementType> bufferType;
+
 class DataBucket
 {
 private:
-    size_t maxSize;
-    boost::circular_buffer<char> data;
+    size_t capacity;
+    bufferType data;
     boost::mutex mutex;
 
-
 public:
-    DataBucket(const size_t maxsize);
-    void AddData(const char &newdata);
-    void AddData(const std::vector<char> &newdata);
-    const char ReadLatest();
+    DataBucket(const size_t capacity);
+    const size_t Capacity() const;
+    const size_t Size() const;
+    void SetCapacity(const size_t capacity);
+    void AddData(const elementType &newdata);
+    void AddData(const std::vector<elementType> &newdata);
+    const elementType ReadLatest();
+    const bufferType& Get() const;
 };
 
 

@@ -18,6 +18,7 @@ public:
     ~SerialConnection();
     error_code Connect();
     error_code Disconnect();
+    error_code AsyncRead();
 
 public: // make private again later
     boost::shared_ptr<boost::asio::serial_port> port;

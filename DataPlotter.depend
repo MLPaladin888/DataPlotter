@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1376001736 source:d:\programming\localgit\dataplotter\source\main.cpp
+1376151968 source:d:\programming\localgit\dataplotter\source\main.cpp
 	<stdio.h>
 	"SerialModule/SerialMain.h"
-	"Readers/AsyncReader.h"
 	"Threads/Threads.h"
-	"SFML/Graphics.hpp"
+	"Window/Window.h"
+	"DataBucket/CharBufferToString.h"
 
 1375316354 d:\programming\localgit\dataplotter\include\serialmodule\serialmain.h
 	"SerialModule/SerialConnection.h"
@@ -9018,13 +9018,14 @@
 	<boost/container/detail/preprocessor.hpp>
 	<boost/container/detail/config_end.hpp>
 
-1373060163 source:d:\programming\localgit\dataplotter\source\connection\connection.cpp
+1376151112 source:d:\programming\localgit\dataplotter\source\connection\connection.cpp
 	"Connection/Connection.h"
 
-1373060163 d:\programming\localgit\dataplotter\include\connection\connection.h
+1376151487 d:\programming\localgit\dataplotter\include\connection\connection.h
 	"boost/asio.hpp"
+	"Readers/AsyncReader.h"
 
-1375642585 d:\programming\localgit\dataplotter\include\serialmodule\serialconnection.h
+1376150397 d:\programming\localgit\dataplotter\include\serialmodule\serialconnection.h
 	"Connection\Connection.h"
 	"SerialModule\SerialDeviceEnumeration.h"
 	"boost\asio\serial_port.hpp"
@@ -9032,7 +9033,7 @@
 1373060163 d:\programming\localgit\dataplotter\include\serialmodule\serialdeviceenumeration.h
 	"boost\asio\serial_port.hpp"
 
-1375659907 source:d:\programming\localgit\dataplotter\source\serialmodule\serialconnection.cpp
+1376150728 source:d:\programming\localgit\dataplotter\source\serialmodule\serialconnection.cpp
 	"SerialModule/SerialConnection.h"
 
 1373060163 source:d:\programming\localgit\dataplotter\source\serialmodule\serialdeviceenumeration.cpp
@@ -19016,10 +19017,10 @@
 
 1365969018 d:\programming\libraries\boost_1_54_0\boost\detail\atomic_redef_macros.hpp
 
-1375645646 source:d:\programming\localgit\dataplotter\source\databucket\databucket.cpp
+1376150956 source:d:\programming\localgit\dataplotter\source\databucket\databucket.cpp
 	"DataBucket/DataBucket.h"
 
-1375644893 d:\programming\localgit\dataplotter\include\databucket\databucket.h
+1376151436 d:\programming\localgit\dataplotter\include\databucket\databucket.h
 	<vector>
 	"boost/circular_buffer.hpp"
 	"boost/thread/mutex.hpp"
@@ -19070,14 +19071,14 @@
 	<boost/type_traits/is_same.hpp>
 	<boost/detail/workaround.hpp>
 
-1376002116 source:d:\programming\localgit\dataplotter\source\readers\asyncreader.cpp
+1376150673 source:d:\programming\localgit\dataplotter\source\readers\asyncreader.cpp
 	"Readers/AsyncReader.h"
 
-1376001999 d:\programming\localgit\dataplotter\include\readers\asyncreader.h
+1376150664 d:\programming\localgit\dataplotter\include\readers\asyncreader.h
 	<vector>
 	<cstdlib>
-	"boost/thread.hpp"
 	"boost/asio.hpp"
+	"boost/bind.hpp"
 	"DataBucket/DataBucket.h"
 	"boost/enable_shared_from_this.hpp"
 
@@ -19112,11 +19113,11 @@
 
 1332865710 d:\programming\libraries\boost_1_54_0\boost\foreach_fwd.hpp
 
-1375748450 d:\programming\localgit\dataplotter\include\threads\threads.h
+1376149880 d:\programming\localgit\dataplotter\include\threads\threads.h
 	"boost\thread.hpp"
 	"boost\asio.hpp"
 
-1375748441 source:d:\programming\localgit\dataplotter\source\threads\threads.cpp
+1376149875 source:d:\programming\localgit\dataplotter\source\threads\threads.cpp
 	"Threads/Threads.h"
 
 1374391808 d:\programming\libraries\sfml2.1\include\sfml\window.hpp
@@ -19452,4 +19453,364 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1376151456 source:d:\programming\localgit\dataplotter\source\databucket\charbuffertostring.cpp
+	"DataBucket/CharBufferToString.h"
+
+1376151399 d:\programming\localgit\dataplotter\include\databucket\charbuffertostring.h
+	<string>
+	"DataBucket/DataBucket.h"
+	"boost/circular_buffer.hpp"
+	"boost/foreach.hpp"
+	"boost/lexical_cast.hpp"
+
+1367943886 d:\programming\libraries\boost_1_54_0\boost\lexical_cast.hpp
+	<boost/config.hpp>
+	<climits>
+	<cstddef>
+	<string>
+	<cstring>
+	<cstdio>
+	<typeinfo>
+	<exception>
+	<boost/limits.hpp>
+	<boost/mpl/if.hpp>
+	<boost/throw_exception.hpp>
+	<boost/type_traits/ice.hpp>
+	<boost/type_traits/is_pointer.hpp>
+	<boost/static_assert.hpp>
+	<boost/detail/lcast_precision.hpp>
+	<boost/detail/workaround.hpp>
+	<locale>
+	<strstream>
+	<sstream>
+	<cmath>
+	<istream>
+	<array>
+	<boost/array.hpp>
+	<boost/numeric/conversion/cast.hpp>
+	<boost/type_traits/make_unsigned.hpp>
+	<boost/type_traits/is_signed.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_arithmetic.hpp>
+	<boost/type_traits/remove_pointer.hpp>
+	<boost/type_traits/has_left_shift.hpp>
+	<boost/type_traits/has_right_shift.hpp>
+	<boost/math/special_functions/sign.hpp>
+	<boost/math/special_functions/fpclassify.hpp>
+	<boost/range/iterator_range_core.hpp>
+	<boost/container/container_fwd.hpp>
+	<boost/integer.hpp>
+	<cwchar>
+
+1266154280 d:\programming\libraries\boost_1_54_0\boost\detail\lcast_precision.hpp
+	<climits>
+	<ios>
+	<limits>
+	<boost/config.hpp>
+	<boost/integer_traits.hpp>
+	<boost/mpl/if.hpp>
+	<boost/type_traits/is_abstract.hpp>
+	<boost/assert.hpp>
+	<boost/static_assert.hpp>
+
+1317911236 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\cast.hpp
+	<boost/detail/workaround.hpp>
+	<boost/numeric/conversion/detail/old_numeric_cast.hpp>
+	<boost/type.hpp>
+	<boost/numeric/conversion/converter.hpp>
+	<boost/numeric/conversion/numeric_cast_traits.hpp>
+
+1206211554 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\old_numeric_cast.hpp
+	<boost/config.hpp>
+	<cassert>
+	<typeinfo>
+	<boost/type.hpp>
+	<boost/limits.hpp>
+	<boost/numeric/conversion/converter_policies.hpp>
+
+1331353896 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\converter_policies.hpp
+	<typeinfo>
+	<boost/config/no_tr1/cmath.hpp>
+	<boost/throw_exception.hpp>
+	<functional>
+	"boost/type_traits/is_arithmetic.hpp"
+	"boost/mpl/if.hpp"
+	"boost/mpl/integral_c.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\converter.hpp
+	"boost/numeric/conversion/conversion_traits.hpp"
+	"boost/numeric/conversion/converter_policies.hpp"
+	"boost/numeric/conversion/detail/converter.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\conversion_traits.hpp
+	"boost/numeric/conversion/detail/conversion_traits.hpp"
+	"boost/detail/workaround.hpp"
+	"boost/config.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\conversion_traits.hpp
+	"boost/type_traits/is_arithmetic.hpp"
+	"boost/type_traits/is_same.hpp"
+	"boost/type_traits/remove_cv.hpp"
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/numeric/conversion/detail/int_float_mixture.hpp"
+	"boost/numeric/conversion/detail/sign_mixture.hpp"
+	"boost/numeric/conversion/detail/udt_builtin_mixture.hpp"
+	"boost/numeric/conversion/detail/is_subranged.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\meta.hpp
+	"boost/type_traits/remove_cv.hpp"
+	"boost/mpl/if.hpp"
+	"boost/mpl/eval_if.hpp"
+	"boost/mpl/equal_to.hpp"
+	"boost/mpl/not.hpp"
+	"boost/mpl/and.hpp"
+	"boost/mpl/bool.hpp"
+	"boost/mpl/identity.hpp"
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\equal_to.hpp
+	<boost/mpl/aux_/comparison_op.hpp>
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\int_float_mixture.hpp
+	"boost/config.hpp"
+	"boost/limits.hpp"
+	"boost/numeric/conversion/int_float_mixture_enum.hpp"
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/mpl/integral_c.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\int_float_mixture_enum.hpp
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\sign_mixture.hpp
+	"boost/config.hpp"
+	"boost/limits.hpp"
+	"boost/numeric/conversion/sign_mixture_enum.hpp"
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/mpl/integral_c.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\sign_mixture_enum.hpp
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\udt_builtin_mixture.hpp
+	"boost/type_traits/is_arithmetic.hpp"
+	"boost/numeric/conversion/udt_builtin_mixture_enum.hpp"
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/mpl/integral_c.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\udt_builtin_mixture_enum.hpp
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\is_subranged.hpp
+	"boost/config.hpp"
+	"boost/limits.hpp"
+	"boost/mpl/int.hpp"
+	"boost/mpl/multiplies.hpp"
+	"boost/mpl/less.hpp"
+	"boost/mpl/equal_to.hpp"
+	"boost/type_traits/is_same.hpp"
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/numeric/conversion/detail/int_float_mixture.hpp"
+	"boost/numeric/conversion/detail/sign_mixture.hpp"
+	"boost/numeric/conversion/detail/udt_builtin_mixture.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\converter.hpp
+	<functional>
+	"boost/numeric/conversion/detail/meta.hpp"
+	"boost/numeric/conversion/detail/conversion_traits.hpp"
+	"boost/numeric/conversion/bounds.hpp"
+	"boost/type_traits/is_same.hpp"
+	"boost/mpl/integral_c.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\bounds.hpp
+	"boost/numeric/conversion/detail/bounds.hpp"
+
+1216815326 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\bounds.hpp
+	"boost/limits.hpp"
+	"boost/config.hpp"
+	"boost/mpl/if.hpp"
+
+1317911236 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\numeric_cast_traits.hpp
+	<boost/numeric/conversion/converter_policies.hpp>
+	<boost/cstdint.hpp>
+	<boost/numeric/conversion/detail/numeric_cast_traits.hpp>
+
+1328136172 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\numeric_cast_traits.hpp
+	<boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp>
+	<boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp>
+	<boost/preprocessor/seq/elem.hpp>
+	<boost/preprocessor/seq/size.hpp>
+	<boost/preprocessor/iteration/iterate.hpp>
+
+1328136172 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\preprocessed\numeric_cast_traits_common.hpp
+
+1328136172 d:\programming\libraries\boost_1_54_0\boost\numeric\conversion\detail\preprocessed\numeric_cast_traits_long_long.hpp
+
+1366004828 d:\programming\libraries\boost_1_54_0\boost\math\special_functions\sign.hpp
+	<boost/math/tools/config.hpp>
+	<boost/math/special_functions/math_fwd.hpp>
+	<boost/math/special_functions/detail/fp_traits.hpp>
+
+1366004828 d:\programming\libraries\boost_1_54_0\boost\math\tools\config.hpp
+	<boost/config.hpp>
+	<boost/cstdint.hpp>
+	<boost/detail/workaround.hpp>
+	<algorithm>
+	<boost/config/no_tr1/cmath.hpp>
+	<climits>
+	<cfloat>
+	<math.h>
+	<boost/math/tools/user.hpp>
+	<float.h>
+	"boost/type.hpp"
+	"boost/non_type.hpp"
+	<boost/detail/fenv.hpp>
+	<iostream>
+	<iomanip>
+	<typeinfo>
+
+1216128626 d:\programming\libraries\boost_1_54_0\boost\math\tools\user.hpp
+
+1369473070 d:\programming\libraries\boost_1_54_0\boost\detail\fenv.hpp
+	<boost/config.hpp>
+	<features.h>
+	<bits/fenv.h>
+	<stdio.h>
+	<fenv.h>
+
+1366004828 d:\programming\libraries\boost_1_54_0\boost\math\special_functions\math_fwd.hpp
+	<boost/math/special_functions/detail/round_fwd.hpp>
+	<boost/math/tools/promotion.hpp>
+	<boost/math/policies/policy.hpp>
+	<boost/mpl/comparison.hpp>
+	<boost/config/no_tr1/complex.hpp>
+
+1366004828 d:\programming\libraries\boost_1_54_0\boost\math\special_functions\detail\round_fwd.hpp
+	<boost/config.hpp>
+	<boost/math/tools/promotion.hpp>
+
+1294497186 d:\programming\libraries\boost_1_54_0\boost\math\tools\promotion.hpp
+	<boost/math/tools/config.hpp>
+	<boost/type_traits/is_floating_point.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/or.hpp>
+	<boost/mpl/not.hpp>
+	<boost/static_assert.hpp>
+
+1366004828 d:\programming\libraries\boost_1_54_0\boost\math\policies\policy.hpp
+	<boost/mpl/list.hpp>
+	<boost/mpl/contains.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/find_if.hpp>
+	<boost/mpl/remove_if.hpp>
+	<boost/mpl/vector.hpp>
+	<boost/mpl/push_back.hpp>
+	<boost/mpl/at.hpp>
+	<boost/mpl/size.hpp>
+	<boost/mpl/comparison.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/static_assert.hpp>
+	<boost/assert.hpp>
+	<boost/math/tools/config.hpp>
+	<limits>
+	<limits.h>
+	<stdlib.h>
+	<stddef.h>
+	<math.h>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\list.hpp
+	<boost/mpl/limits/list.hpp>
+	<boost/mpl/aux_/na.hpp>
+	<boost/mpl/aux_/config/preprocessor.hpp>
+	<boost/preprocessor/inc.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/stringize.hpp>
+	<boost/mpl/aux_/config/use_preprocessed.hpp>
+	<boost/mpl/aux_/include_preprocessed.hpp>
+	<boost/mpl/limits/list.hpp>
+	<boost/mpl/aux_/sequence_wrapper.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\limits\list.hpp
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\remove_if.hpp
+	<boost/mpl/fold.hpp>
+	<boost/mpl/reverse_fold.hpp>
+	<boost/mpl/eval_if.hpp>
+	<boost/mpl/identity.hpp>
+	<boost/mpl/protect.hpp>
+	<boost/mpl/lambda.hpp>
+	<boost/mpl/apply.hpp>
+	<boost/mpl/aux_/inserter_algorithm.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\comparison.hpp
+	<boost/mpl/equal_to.hpp>
+	<boost/mpl/not_equal_to.hpp>
+	<boost/mpl/less.hpp>
+	<boost/mpl/greater.hpp>
+	<boost/mpl/less_equal.hpp>
+	<boost/mpl/greater_equal.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\not_equal_to.hpp
+	<boost/mpl/aux_/comparison_op.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\greater.hpp
+	<boost/mpl/aux_/comparison_op.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\less_equal.hpp
+	<boost/mpl/aux_/comparison_op.hpp>
+
+1223695142 d:\programming\libraries\boost_1_54_0\boost\mpl\greater_equal.hpp
+	<boost/mpl/aux_/comparison_op.hpp>
+
+1129729120 d:\programming\libraries\boost_1_54_0\boost\config\no_tr1\complex.hpp
+	<complex>
+
+1325492500 d:\programming\libraries\boost_1_54_0\boost\math\special_functions\detail\fp_traits.hpp
+	<cstring>
+	<boost/assert.hpp>
+	<boost/cstdint.hpp>
+	<boost/detail/endian.hpp>
+	<boost/static_assert.hpp>
+	<boost/type_traits/is_floating_point.hpp>
+
+1369556350 d:\programming\libraries\boost_1_54_0\boost\detail\endian.hpp
+	<endian.h>
+	<machine/endian.h>
+	<sys/endian.h>
+	"machine/_types.h"
+
+1369383470 d:\programming\libraries\boost_1_54_0\boost\math\special_functions\fpclassify.hpp
+	<math.h>
+	<boost/config/no_tr1/cmath.hpp>
+	<boost/limits.hpp>
+	<boost/math/tools/real_cast.hpp>
+	<boost/type_traits/is_floating_point.hpp>
+	<boost/math/special_functions/math_fwd.hpp>
+	<boost/math/special_functions/detail/fp_traits.hpp>
+	<float.h>
+
+1216128626 d:\programming\libraries\boost_1_54_0\boost\math\tools\real_cast.hpp
+
+1349080324 d:\programming\libraries\boost_1_54_0\boost\container\container_fwd.hpp
+	<utility>
+	<memory>
+	<functional>
+	<iosfwd>
+	<string>
+
+1376151858 d:\programming\localgit\dataplotter\include\window\handleevents.h
+	"SFML/Graphics.hpp"
+	"boost/shared_ptr.hpp"
+
+1376151894 source:d:\programming\localgit\dataplotter\source\window\handleevents.cpp
+	"Window/HandleEvents.h"
+
+1376152009 d:\programming\localgit\dataplotter\include\window\window.h
+	"HandleEvents.h"
+	"Draw.h"
+
+1376152114 d:\programming\localgit\dataplotter\include\window\draw.h
+	"SFML/Graphics.hpp"
+	"boost/shared_ptr.hpp"
 

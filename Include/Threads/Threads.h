@@ -5,6 +5,7 @@
 #define _WIN32_WINNT 0x0501
 #include "boost\asio.hpp"
 
+#define THREADS_DEBUG
 void InitThreadGroup(boost::shared_ptr<boost::thread_group> workers, boost::shared_ptr<boost::asio::io_service> io_service);
 void ThreadStartupFunc(boost::shared_ptr<boost::asio::io_service> io_service);
 

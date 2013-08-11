@@ -4,13 +4,9 @@ SerialConnection::SerialConnection(boost::shared_ptr<boost::asio::io_service> sh
     : Connection(shared_ptr_io_service),
         port(new boost::asio::serial_port(*shared_ptr_io_service)),
         deviceEnum(SerialDevEnum)
-{
-}
+{}
 
-SerialConnection::~SerialConnection()
-{
-
-}
+SerialConnection::~SerialConnection() {}
 
 error_code SerialConnection::Connect()
 {
@@ -45,3 +41,11 @@ error_code SerialConnection::Disconnect()
     std::cout << "Port closed.\n";
     return make_error_code(boost::system::errc::success);
 }
+
+error_code SerialConnection::AsyncRead()
+{
+    reader->AsyncRead(port, rawData);
+    return make_error_code(boost::system::errc::success);
+}
+
+

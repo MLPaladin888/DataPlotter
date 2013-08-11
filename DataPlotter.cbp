@@ -45,19 +45,26 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="Include/Connection/Connection.h" />
+		<Unit filename="Include/DataBucket/CharBufferToString.h" />
 		<Unit filename="Include/DataBucket/DataBucket.h" />
 		<Unit filename="Include/Readers/AsyncReader.h" />
 		<Unit filename="Include/SerialModule/SerialConnection.h" />
 		<Unit filename="Include/SerialModule/SerialDeviceEnumeration.h" />
 		<Unit filename="Include/SerialModule/SerialMain.h" />
 		<Unit filename="Include/Threads/Threads.h" />
+		<Unit filename="Include/Window/Draw.h" />
+		<Unit filename="Include/Window/HandleEvents.h" />
+		<Unit filename="Include/Window/Window.h" />
 		<Unit filename="Source/Connection/Connection.cpp" />
+		<Unit filename="Source/DataBucket/CharBufferToString.cpp" />
 		<Unit filename="Source/DataBucket/DataBucket.cpp" />
 		<Unit filename="Source/Main.cpp" />
 		<Unit filename="Source/Readers/AsyncReader.cpp" />
 		<Unit filename="Source/SerialModule/SerialConnection.cpp" />
 		<Unit filename="Source/SerialModule/SerialDeviceEnumeration.cpp" />
 		<Unit filename="Source/Threads/Threads.cpp" />
+		<Unit filename="Source/Window/Draw.cpp" />
+		<Unit filename="Source/Window/HandleEvents.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
