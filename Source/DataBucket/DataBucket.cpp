@@ -37,11 +37,12 @@ void DataBucket::AddData(const std::vector<elementType> &newdata)
     mutex.lock();
 
     std::cout << " ";
-    BOOST_FOREACH(size_t i, newdata)
+
+    for(const unsigned char &i : newdata)    ////// CHECK THIS LINE ///////////
     {
-        data.push_back(newdata[i-1]);
+        data.push_back(i);
         std::cout << i << ": ";
-        std::cout << (unsigned int)newdata[i-1] << "\n";
+        std::cout << (unsigned int)i << "\n";
     }
     std::cout << "\n";
     mutex.unlock();

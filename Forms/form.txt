@@ -1,0 +1,19 @@
+Window:
+{
+	Button: "Button1"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 550
+		Top = 20
+		Width = 121
+		Height = 30
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "ScanPorts"
+		TextColor = (0,0,0,255)
+		TextSize = 19
+	}
+
+}

@@ -1,0 +1,297 @@
+Window:
+{
+	Label: "LabelPort"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 10
+		Width = 58
+		Height = 24
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Port"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboPort"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 40
+		Width = 500
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "Port 1"
+		SelectedItem = 0
+	}
+
+	Button: "ButtonScanPorts"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 520
+		Top = 40
+		Width = 121
+		Height = 30
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "ScanPorts"
+		TextColor = (0,0,0,255)
+		TextSize = 19
+	}
+
+	Label: "LabelParity"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 80
+		Width = 83
+		Height = 31
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Parity"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboParity"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 110
+		Width = 145
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "None,Odd,Even"
+		SelectedItem = 0
+	}
+
+	Label: "LabelBaudRate"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 150
+		Width = 74
+		Height = 25
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Baud"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboBaudRate"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 180
+		Width = 145
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "921600,460800,230400,115200,57600,38400,19200,9600,4800,2400,1200"
+		SelectedItem = 3
+	}
+
+	Label: "LabelDataBits"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 220
+		Width = 136
+		Height = 25
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Data Bits"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboDataBits"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 250
+		Width = 145
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "8 bits"
+		SelectedItem = 0
+	}
+
+	Label: "LabelStopBits"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 290
+		Width = 134
+		Height = 31
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Stop Bits"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboStopBits"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 320
+		Width = 145
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "1 bit,2 bits"
+		SelectedItem = 0
+	}
+
+	Label: "LabelFlowControl"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 360
+		Width = 182
+		Height = 25
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Flow Control"
+		TextColor = (0,0,0,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+	ComboBox: "ComboFlowControl"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 10
+		Top = 390
+		Width = 145
+		Height = 26
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		ItemsToDisplay = 0
+		BackgroundColor = (255,255,255,255)
+		TextColor = (0,0,0,255)
+		SelectedBackgroundColor = (0,110,255,255)
+		SelectedTextColor = (255,255,255,255)
+		BorderColor = (0,0,0,255)
+		Borders = (1,1,1,1)
+		MaximumItems = 0
+		Items = "NONE"
+		SelectedItem = 0
+	}
+
+	Button: "ButtonApply"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 50
+		Top = 540
+		Width = 121
+		Height = 30
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Apply"
+		TextColor = (0,0,0,255)
+		TextSize = 20
+	}
+
+	Button: "ButtonCancel"
+	{
+		ConfigFile = "widgets/White.conf"
+		Left = 200
+		Top = 540
+		Width = 121
+		Height = 30
+		Visible = true
+		Enabled = true
+		Transparency = 255
+		CallbackId = 0
+		Text = "Cancel"
+		TextColor = (0,0,0,255)
+		TextSize = 20
+	}
+
+}

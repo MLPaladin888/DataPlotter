@@ -3,9 +3,9 @@
 std::string ToString(const boost::circular_buffer<unsigned char> &buffer)
 {
     std::string returnString;
-    BOOST_FOREACH(size_t i, buffer)
+    for(const unsigned char &i : buffer)    /////////// CHECK THIS LINE //////////
     {
-        returnString.append( boost::lexical_cast<std::string>( (unsigned int)buffer[i-1] ) );
+        returnString.append( boost::lexical_cast<std::string>( (unsigned int)i ) );
     }
     return returnString;
 }

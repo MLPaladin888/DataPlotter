@@ -1,0 +1,11 @@
+#ifndef HANDLECALLBACKS_H_INCLUDED
+#define HANDLECALLBACKS_H_INCLUDED
+
+void HandleCallbacks()
+{
+
+}
+
+
+
+#endif // HANDLECALLBACKS_H_INCLUDED

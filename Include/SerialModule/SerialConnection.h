@@ -4,6 +4,9 @@
 #include "Connection\Connection.h"
 #include "SerialModule\SerialDeviceEnumeration.h"
 #include "boost\asio\serial_port.hpp"
+#include "boost\lexical_cast.hpp"
+
+#define SERIALCONNECTION_DEBUG
 
 typedef boost::system::error_code error_code;
 
@@ -24,7 +27,5 @@ public: // make private again later
     boost::shared_ptr<boost::asio::serial_port> port;
     SerialDeviceEnumeration deviceEnum;
 };
-
-
 
 #endif // SERIALCONNECTION_H_INCLUDED

@@ -4,7 +4,6 @@
 #include <string>
 #include "DataBucket/DataBucket.h"
 #include "boost/circular_buffer.hpp"
-#include "boost/foreach.hpp"
 #include "boost/lexical_cast.hpp"
 
 

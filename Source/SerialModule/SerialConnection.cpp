@@ -24,8 +24,11 @@ error_code SerialConnection::Connect()
     {
         std::cout << "Error opening port \"" << deviceEnum.name << "\".\n";
         std::cout << "Error: " << ec.message() << ".\n";
+        return ec;
     }
-    std::cout << "Port opened.\n";
+    #ifdef SERIALCONNECTION_DEBUG
+        std::cout << "Port opened.\n";
+    #endif // SERIALCONNECTION_DEBUG
     return make_error_code(boost::system::errc::success);
 }
 
@@ -38,7 +41,9 @@ error_code SerialConnection::Disconnect()
         std::cout << "Error closing port \"" << deviceEnum.name << "\".\n";
         std::cout << "Error: " << ec.message() << ".\n";
     }
-    std::cout << "Port closed.\n";
+    #ifdef SERIALCONNECTION_DEBUG
+        std::cout << "Port closed.\n";
+    #endif // SERIALCONNECTION_DEBUG
     return make_error_code(boost::system::errc::success);
 }
 
@@ -47,5 +52,7 @@ error_code SerialConnection::AsyncRead()
     reader->AsyncRead(port, rawData);
     return make_error_code(boost::system::errc::success);
 }
+
+
 
 

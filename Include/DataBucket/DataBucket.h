@@ -4,7 +4,6 @@
 #include <vector>
 #include "boost/circular_buffer.hpp"
 #include "boost/thread/mutex.hpp"
-#include "boost/foreach.hpp"
 
 typedef unsigned char elementType;
 typedef boost::circular_buffer<elementType> bufferType;
